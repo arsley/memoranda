@@ -1,0 +1,1 @@
+# ISHOCON2 self
