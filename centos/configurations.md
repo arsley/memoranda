@@ -2,8 +2,11 @@
 
 ## Initial setting
 
-1. 新規ユーザ作成 `useradd`
-2. `visudo` による `sudo` 実行権限付与
+```
+# adduser assly
+# usermod -aG sudo,docker assly
+# cat /etc/group | grep assly
+```
 
 ## SSH
 
@@ -46,3 +49,6 @@ $ ssh labelOfHostname
 
 - [SSH ポート番号変更](https://webkaru.net/linux/change-ssh-port/)
 - [firewalld SSH ポート番号変更](https://webkaru.net/linux/centos7-firewalld-ssh-port/)
+- [How To Set Up a Firewall Using FirewallD on CentOS 7 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7)
+- [How To Set Up a Firewall Using Iptables on Ubuntu 14.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04)
+- [43.9.4. Saving IPTables Rules](https://www.centos.org/docs/5/html/5.1/Deployment_Guide/s1-iptables-saving.html)
