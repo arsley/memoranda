@@ -72,3 +72,8 @@ server {
 $ nginx -t
 $ systemctl restart nginx
 ```
+
+## Ref
+
+- [Installing Passenger + Nginx on Red Hat 6 / CentOS 6 (with RPM) - Passenger Library](https://www.phusionpassenger.com/library/install/nginx/install/oss/el6/)
+- [CentOSにnginxとpassengerを導入してRailsアプリと連携させる - Qiita](https://qiita.com/NaokiIshimura/items/24e0b911ca411421205a)
