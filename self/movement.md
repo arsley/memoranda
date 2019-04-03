@@ -31,7 +31,14 @@
   - gist : `https://gist.github.com/arsley/f7b5a5e5b9f39a6d6403a8d85cb4dff9`
   - うまくいかなかったら, Settingに追記して `sync-setting:restore`
 - [Docker for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
-- slack, Line, discord texlive wireshark airmail
+- slack, Line, discord wireshark airmail
+- [texlive](https://tug.org/texlive/)
+  - ダウンロードリンクは[ココ](https://tug.org/texlive/acquire-netinstall.html)
+  - インストールの参考 : https://texwiki.texjp.org/?TeX%20Live
+  - mac向けもある : https://texwiki.texjp.org/?TeX%20Live%2FMac
+  - [ヒラギノフォントのセットアップ](https://texwiki.texjp.org/?%E3%83%92%E3%83%A9%E3%82%AE%E3%83%8E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88#macos-hiragino-setup)もある
+  - `sudo tlmgr install latexmk`
+  - `sudo tlmgr install here float systeme xstring listings xcolor`
 - [skim](https://skim-app.sourceforge.io/)
 - [dash](https://kapeli.com/dash)
 - [notable](https://github.com/notable/notable)
