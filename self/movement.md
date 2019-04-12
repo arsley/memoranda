@@ -47,3 +47,4 @@
   - quick look FILEの中身が見られる拡張
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
 - [hstr](https://github.com/dvorka/hstr)
+- [R lang](https://cran.r-project.org/bin/macosx/)
