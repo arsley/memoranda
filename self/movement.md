@@ -4,51 +4,40 @@
 
 ---
 
-- [keypad-layout](https://github.com/janten/keypad-layout)
 - [SizeUp](http://www.irradiatedsoftware.com/sizeup/)
-- homebrew
-- [zsh oh-my-zsh](https://sourabhbajaj.com/mac-setup/iTerm/zsh.html)
+- XCode
+- run `git` command to install command line tools
+- [homebrew](https://brew.sh/index_ja)
+- [iterm2](https://www.iterm2.com/)
+- [dotfiles](https://github.com/arsley/dotfiles)
+- [oh-my-zsh](https://sourabhbajaj.com/mac-setup/iTerm/zsh.html)
+- [hstr](https://github.com/dvorka/hstr)
 - [dein](https://github.com/Shougo/dein.vim)
-- `cd`
-- `gcl https://github.com/arsley/dotfiles.git && cd dotfiles && gco macOS && ./link`
-- Edit `.vimrc` `.zshrc` (PATH関係)
-- `:call dein#install()`
-- `brew install nodebrew rbenv pyenv`
-  - with Edit `.vimrc` `.zshrc`
-- `nodebrew install VERSION`
-  - `mkdir -p $HOME/.nodebrew/src/VERSION` が必要になるかも
-  - `nodebrew use VERSION`
-- `rbenv install VERSION`
-  - `rbenv global VERSION`
+- cmd installations
+
+```
+brew install asdf vim hub tmux coreutils gpg
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+asdf plugin-add yarn
+asdf plugin-add ruby
+asdf plugin-add nodejs
+asdf plugin-add crystal
+asdf install
+```
+
 - Git
+  - [ssh key generation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
   - `ssh -T git@github.com`
-- Atom
+- [Atom](https://atom.io/)
   - `apm install sync-settings`
-  - `GITHUB_TOKEN=hogehoge GIST_ID=hogehoge atom .`
   - gist : `https://gist.github.com/arsley/f7b5a5e5b9f39a6d6403a8d85cb4dff9`
-  - うまくいかなかったら, Settingに追記して `sync-setting:restore`
+  - `sync-settings:restore`
 - [Docker for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
-- slack, Line, discord wireshark airmail
+- slack, discord, spark
 - [skim](https://skim-app.sourceforge.io/)
-- [dash](https://kapeli.com/dash)
-- [notable](https://github.com/notable/notable)
 - [trailer](http://ptsochantaris.github.io/trailer/)
 - [qlstephen](https://github.com/whomwah/qlstephen)
   - quick look FILEの中身が見られる拡張
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
-- [hstr](https://github.com/dvorka/hstr)
-- [R lang](https://cran.r-project.org/bin/macosx/)
-  - [tinytex](https://yihui.name/tinytex/)
+- [tinytex](https://yihui.name/tinytex/)
 
-### Deprecated?
-- [Qutebrowser](https://github.com/qutebrowser/qutebrowser)
-  - Chrome, Firefox
-  - bookmarkのインポート
-  - `cd && gcl https://github.com/arsley/dot-qutebrowser .qutebrowser`
-- [texlive](https://tug.org/texlive/)
-  - ダウンロードリンクは[ココ](https://tug.org/texlive/acquire-netinstall.html)
-  - インストールの参考 : https://texwiki.texjp.org/?TeX%20Live
-  - mac向けもある : https://texwiki.texjp.org/?TeX%20Live%2FMac
-  - [ヒラギノフォントのセットアップ](https://texwiki.texjp.org/?%E3%83%92%E3%83%A9%E3%82%AE%E3%83%8E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88#macos-hiragino-setup)もある
-  - `sudo tlmgr install latexmk`
-  - `sudo tlmgr install here float systeme xstring listings xcolor`
